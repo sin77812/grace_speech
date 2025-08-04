@@ -109,7 +109,10 @@ main {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #06342e 0%, #2C5F56 100%);
+    background: linear-gradient(rgba(6, 52, 46, 0.3), rgba(44, 95, 86, 0.3)), url('images/hero.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #fff;
     padding: 80px 0;
     text-align: center;
@@ -121,6 +124,7 @@ main {
 .hero .container {
     width: 100%;
     padding-bottom: 40px;
+    transform: translateX(300px);
 }
 
 .hero-title {
@@ -337,6 +341,7 @@ section {
     
     .hero .container {
         padding-bottom: 30px;
+        transform: translateX(0);
     }
     
     .hero-title {
@@ -1302,7 +1307,7 @@ section {
 }
 
 .stat-label {
-    color: rgba(255,255,255,0.9);
+    color: #333;
     font-size: 16px;
     font-weight: 500;
 }
