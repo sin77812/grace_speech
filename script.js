@@ -59,9 +59,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Download proposal function
 function downloadProposal() {
-    // This would typically link to the actual PDF file
-    // For now, it shows an alert
-    alert('제안서 다운로드 기능입니다.\n실제 PDF 파일 경로를 연결해주세요.');
+    const link = document.createElement('a');
+    link.href = '제안서 다운로드.pdf';
+    link.download = '그레이스스피치_제안서.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 }
 
 // E-book download function
