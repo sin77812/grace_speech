@@ -313,12 +313,12 @@ section {
 
 /* Contact Info Section */
 .contact-info {
-    background-color: #2a3a37;
-    color: #8a9690;
+    background-color: #04251f;
+    color: #c8b4a3;
 }
 
 .contact-info .section-title {
-    color: #8a9690;
+    color: #fff;
     text-align: left;
     margin-left: calc(50% - 300px - 200px);
 }
@@ -338,7 +338,7 @@ section {
 }
 
 .contact-details strong {
-    color: #9ca8a2;
+    color: #e8d7c7;
 }
 
 /* Fixed Buttons */
@@ -390,6 +390,7 @@ section {
     .hero {
         min-height: 450px;
         padding: 60px 0;
+        transform: scale(0.9);
     }
     
     .hero .container {
@@ -406,23 +407,23 @@ section {
     }
     
     .hero-cta-grid {
-        grid-template-columns: 1fr;
-        gap: 12px;
-        max-width: 280px;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        max-width: 350px;
     }
     
     .hero-cta-btn {
-        padding: 10px 16px;
+        padding: 8px 12px;
     }
     
     .cta-number {
-        width: 24px;
-        height: 24px;
-        font-size: 12px;
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
     }
     
     .cta-text {
-        font-size: 13px;
+        font-size: 11px;
     }
     
     .section-title {
@@ -1266,7 +1267,7 @@ section {
 }
 
 .corporate-training {
-    background-color: #f8f9fa;
+    background-color: #04251f;
 }
 
 .personal-coaching {
@@ -1305,6 +1306,18 @@ section {
     text-align: left;
 }
 
+.corporate-training .section-title {
+    color: #fff;
+}
+
+.corporate-training .section-summary {
+    color: #e8d7c7;
+}
+
+.corporate-training .section-detail {
+    color: #c8b4a3;
+}
+
 .instructor-intro .text-content {
     text-align: left;
 }
@@ -1335,6 +1348,10 @@ section {
     text-align: left;
 }
 
+.instructor-intro .section-summary {
+    font-size: 17px;
+}
+
 .section-detail {
     font-size: 16px;
     color: #666;
@@ -1344,7 +1361,7 @@ section {
 }
 
 .section-detail.highlight {
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 600;
     color: #937258;
     text-align: left;
@@ -1418,8 +1435,8 @@ section {
 /* Statistics Section */
 .statistics {
     padding: 80px 0;
-    background: linear-gradient(135deg, #06342e 0%, #2C5F56 100%);
-    color: #fff;
+    background: #fff;
+    color: #333;
 }
 
 .stats-grid {
@@ -1433,10 +1450,10 @@ section {
 .stat-item {
     text-align: center;
     padding: 30px 60px;
-    background: rgba(255, 255, 255, 0.1);
+    background: #fff;
     border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
+    border: 2px solid #f0f0f0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .stat-number {
@@ -1445,11 +1462,10 @@ section {
     color: #937258;
     margin-bottom: 15px;
     display: block;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .stat-label {
-    color: #fff;
+    color: #06342e;
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 12px;
@@ -1460,9 +1476,9 @@ section {
 
 .stat-description {
     font-size: 14px;
-    color: rgba(255,255,255,0.85);
+    color: #666;
     line-height: 1.5;
-    font-style: italic;
+    font-style: normal;
     border-left: 3px solid #937258;
     padding-left: 15px;
     margin-left: 20px;
@@ -1517,70 +1533,72 @@ section {
     font-weight: 600;
 }
 
+.testimonial-cta-card {
+    background: #937258;
+    border-left: 4px solid #7a5d47;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.testimonial-cta-button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.testimonial-cta-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 /* Mobile Responsive for New Sections */
 @media (max-width: 768px) {
     .section-content {
-        flex-direction: column;
         gap: 20px;
-        text-align: center;
+        transform: scale(0.9);
     }
     
     .section-content.reverse {
-        flex-direction: column;
-    }
-    
-    .image-content, .text-content {
-        max-width: 100%;
-        flex: none;
+        flex-direction: row-reverse;
     }
     
     .section-image {
-        height: 400px;
+        height: 350px;
     }
     
     .section-title {
-        font-size: 24px;
-        margin-bottom: 15px;
+        font-size: 22px;
     }
     
     .section-summary {
-        font-size: 16px;
+        font-size: 15px;
     }
     
     .section-detail {
-        font-size: 14px;
+        font-size: 13px;
     }
     
-    .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+    .statistics {
+        transform: scale(0.7);
+        transform-origin: center top;
     }
     
-    .stat-number {
-        font-size: 36px;
+    
+    .testimonials-simple {
+        transform: scale(0.65);
+        transform-origin: center top;
     }
     
-    .stat-label {
-        font-size: 14px;
-    }
-    
-    .testimonials-slider {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-    
-    .testimonial-card {
-        padding: 20px 15px;
-        transform: scale(0.95);
-    }
-    
-    .testimonial-card p {
-        font-size: 14px;
-    }
-    
-    .testimonial-card cite {
-        font-size: 12px;
-    }
 }
 
 @media (max-width: 768px) {
