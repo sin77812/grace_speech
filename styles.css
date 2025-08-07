@@ -424,6 +424,24 @@ section {
     .hero-title {
         font-size: 28px;
     }
+    
+    .statistics {
+        transform: scale(0.75);
+        transform-origin: center center;
+        margin: 0;
+        padding: 40px 5px;
+    }
+    
+    .stats-grid {
+        max-width: 90%;
+        margin: 0 auto;
+        gap: 10px;
+    }
+    
+    .stat-item {
+        padding: 15px 10px;
+        margin: 0;
+    }
 }
     
     .hero-subtitle {
@@ -1514,8 +1532,7 @@ section {
     color: #666;
     line-height: 1.5;
     font-style: normal;
-    border-left: 3px solid #937258;
-    padding-left: 15px;
+    padding-left: 0;
     margin-left: 20px;
     margin-right: 20px;
 }
