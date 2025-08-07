@@ -439,8 +439,30 @@ section {
     }
     
     .stat-item {
-        padding: 15px 10px;
+        padding: 10px 5px;
         margin: 0;
+        overflow: hidden;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .stat-number {
+        font-size: 24px;
+        word-break: break-word;
+    }
+    
+    .stat-label {
+        font-size: 12px;
+        margin-bottom: 8px;
+        word-break: keep-all;
+    }
+    
+    .stat-description {
+        font-size: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+        word-break: keep-all;
+        line-height: 1.3;
     }
 }
     
@@ -1502,11 +1524,15 @@ section {
 
 .stat-item {
     text-align: center;
-    padding: 40px 70px;
+    padding: 40px 20px;
     background: #fff;
     border-radius: 15px;
     border: 2px solid #f0f0f0;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .stat-number {
@@ -1515,6 +1541,8 @@ section {
     color: #937258;
     margin-bottom: 15px;
     display: block;
+    word-break: break-word;
+    white-space: normal;
 }
 
 .stat-label {
@@ -1525,6 +1553,11 @@ section {
     border-bottom: 2px solid #937258;
     padding-bottom: 8px;
     display: inline-block;
+    word-break: keep-all;
+    white-space: normal;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .stat-description {
@@ -1533,8 +1566,13 @@ section {
     line-height: 1.5;
     font-style: normal;
     padding-left: 0;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    word-break: keep-all;
+    white-space: normal;
+    text-align: center;
+    width: calc(100% - 20px);
+    box-sizing: border-box;
 }
 
 /* Simple Testimonials Section */
