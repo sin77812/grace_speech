@@ -428,6 +428,11 @@ section {
     .hero .container {
         padding-bottom: 10px;
         transform: translateX(0);
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
     }
     
     .hero-title {
@@ -1495,11 +1500,13 @@ section {
 
 .stat-item {
     text-align: center;
-    padding: 40px 70px;
+    padding: 30px 50px;
     background: #fff;
     border-radius: 15px;
     border: 2px solid #f0f0f0;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .stat-number {
@@ -1689,15 +1696,23 @@ section {
         gap: 15px;
     }
     
+    .statistics .stat-item {
+        padding: 20px 30px;
+        margin: 0 15px;
+        transform: scale(0.9);
+    }
+    
     .statistics .stat-number {
-        font-size: 26px;
+        font-size: 32px;
     }
     
     .statistics .stat-label {
-        font-size: 10px;
+        font-size: 14px;
     }
     
     .statistics .stat-description {
-        font-size: 8px;
+        font-size: 11px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
