@@ -469,7 +469,7 @@ section {
     /* Statistics section for very small screens */
     .statistics {
         padding: 60px 0 30px 0;
-        transform: scaleX(0.98) scaleY(0.97);
+        transform: scaleX(1.02) scaleY(0.97);
         transform-origin: center;
     }
     
@@ -481,7 +481,7 @@ section {
     }
     
     .statistics .stat-item {
-        padding: 15px 17px;
+        padding: 15px 20px;
         margin: 0;
         border-radius: 10px;
         min-height: auto;
