@@ -469,7 +469,7 @@ section {
     /* Statistics section for very small screens */
     .statistics {
         padding: 60px 0 30px 0;
-        transform: scale(0.97);
+        transform: scaleX(0.98) scaleY(0.97);
         transform-origin: center;
     }
     
