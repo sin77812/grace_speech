@@ -1684,10 +1684,9 @@ section {
         gap: 20px;
     }
     
-    /* Hero CTA positioning for mobile - center height */
+    /* Hero CTA positioning for mobile - move down from center */
     .hero-cta-container {
-        top: 70%;
-        transform: translateX(-50%) translateY(-50%);
+        top: calc(50% + 20%);
     }
     
     .section-image {
