@@ -469,26 +469,27 @@ section {
     /* Statistics section for very small screens */
     .statistics {
         padding: 50px 0 30px 0;
-        transform: scaleX(1.18) scaleY(0.97);
+        transform: scaleY(0.97);
         transform-origin: center;
     }
     
     .stats-grid {
-        gap: 0px;
-        max-width: 95%;
+        gap: 8px;
+        max-width: 100%;
         margin: 0 auto;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
     }
     
     .statistics .stat-item {
-        padding: 15px 28px;
+        padding: 15px 35px;
         margin: 0;
         border-radius: 10px;
         min-height: auto;
-        word-spacing: -2px;
-        letter-spacing: -0.5px;
+        word-spacing: -1px;
+        letter-spacing: 0;
         width: 100%;
+        box-sizing: border-box;
     }
     
     .statistics .stat-number {
