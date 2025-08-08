@@ -1684,6 +1684,11 @@ section {
         gap: 20px;
     }
     
+    /* Hero CTA positioning for mobile */
+    .hero-cta-container {
+        top: 90px;
+    }
+    
     .section-image {
         height: 250px;
         width: 100%;
