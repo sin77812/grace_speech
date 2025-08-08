@@ -440,9 +440,10 @@ section {
     }
     
     .hero-cta-btn {
-        padding: 6px 8px;
-        height: 30px;
-        min-width: auto;
+        padding: 8px 15px;
+        height: 35px;
+        min-width: 80px;
+        width: 80px;
     }
     
     .cta-number {
@@ -503,18 +504,18 @@ section {
     }
     
     .statistics .stat-number {
-        font-size: 22px;
+        font-size: 24px;
         margin-bottom: 8px;
     }
     
     .statistics .stat-label {
-        font-size: 10px;
+        font-size: 12px;
         margin-bottom: 6px;
         padding-bottom: 4px;
     }
     
     .statistics .stat-description {
-        font-size: 7px;
+        font-size: 9px;
         line-height: 1.2;
         margin-left: 3px;
         margin-right: 3px;
@@ -1558,7 +1559,7 @@ section {
 }
 
 .stat-number {
-    font-size: 52px;
+    font-size: 54px;
     font-weight: bold;
     color: #937258;
     margin-bottom: 15px;
@@ -1567,7 +1568,7 @@ section {
 
 .stat-label {
     color: #06342e;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
     margin-bottom: 12px;
     border-bottom: 2px solid #937258;
@@ -1576,7 +1577,7 @@ section {
 }
 
 .stat-description {
-    font-size: 16px;
+    font-size: 18px;
     color: #666;
     line-height: 1.5;
     font-style: normal;
@@ -1762,15 +1763,15 @@ section {
     }
     
     .statistics .stat-number {
-        font-size: 32px;
+        font-size: 34px;
     }
     
     .statistics .stat-label {
-        font-size: 14px;
+        font-size: 16px;
     }
     
     .statistics .stat-description {
-        font-size: 11px;
+        font-size: 13px;
         margin-left: 10px;
         margin-right: 10px;
     }
