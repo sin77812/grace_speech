@@ -453,7 +453,7 @@ section {
     }
     
     .cta-text {
-        font-size: 8px;
+        font-size: 10px;
     }
     
     .hero-cta-grid {
@@ -1684,9 +1684,10 @@ section {
         gap: 20px;
     }
     
-    /* Hero CTA positioning for mobile */
+    /* Hero CTA positioning for mobile - center height */
     .hero-cta-container {
-        top: 90px;
+        top: 70%;
+        transform: translateX(-50%) translateY(-50%);
     }
     
     .section-image {
