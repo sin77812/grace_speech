@@ -520,6 +520,16 @@ section {
         margin-left: 3px;
         margin-right: 3px;
     }
+    
+    /* Override PC stat-item styles for mobile */
+    .stat-item {
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        transform: none !important;
+        padding: 15px 35px !important;
+        display: block !important;
+    }
 }
     
     .section-title {
@@ -1542,8 +1552,8 @@ section {
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
-    max-width: 900px;
+    gap: 30px;
+    max-width: 800px;
     margin: 0 auto;
     justify-items: center;
 }
