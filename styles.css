@@ -474,14 +474,14 @@ section {
     }
     
     .stats-grid {
-        gap: 1px;
+        gap: 0px;
         max-width: 100%;
         margin: 0 auto;
         grid-template-columns: 1fr 1fr;
     }
     
     .statistics .stat-item {
-        padding: 15px 16px;
+        padding: 15px 17px;
         margin: 0;
         border-radius: 10px;
         min-height: auto;
