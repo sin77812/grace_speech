@@ -419,9 +419,9 @@ section {
     }
     
     .hero-cta-container {
-        position: static;
-        transform: translateX(0);
-        padding-top: 15px;
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
         margin-bottom: 0;
     }
     
