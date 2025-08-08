@@ -67,13 +67,20 @@ body {
 .nav {
     position: fixed;
     top: 0;
-    right: -300px;
-    width: 300px;
+    right: -60%;
+    width: 60%;
     height: 100vh;
     background-color: #06342e;
     transition: right 0.3s ease;
     z-index: 999;
     padding-top: 80px;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        width: 50%;
+        right: -50%;
+    }
 }
 
 .nav.active {
@@ -130,9 +137,9 @@ main {
 
 .hero-cta-container {
     position: absolute;
-    top: 50%;
+    top: 100px;
     left: 50%;
-    transform: translate(-50%, -50%) translateX(300px);
+    transform: translateX(-50%) translateX(300px);
     margin-bottom: 15px;
 }
 
@@ -140,8 +147,8 @@ main {
 .hero-cta-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    max-width: 800px;
+    gap: 25px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
@@ -152,14 +159,14 @@ main {
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 40px;
-    padding: 30px 40px;
+    border-radius: 30px;
+    padding: 20px 30px;
     text-decoration: none;
     color: #fff;
     transition: all 0.3s ease;
     font-weight: 600;
-    height: 80px;
-    min-width: 200px;
+    height: 60px;
+    min-width: 150px;
 }
 
 .hero-cta-btn:hover {
@@ -171,19 +178,20 @@ main {
 .cta-number {
     background: #937258;
     color: #fff;
-    width: 28px;
-    height: 28px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     flex-shrink: 0;
+    margin-right: 8px;
 }
 
 .cta-text {
-    font-size: 20px;
+    font-size: 14px;
     flex: 1;
     white-space: nowrap;
     font-weight: 700;
@@ -220,7 +228,7 @@ section {
 
 /* Values Section */
 .values {
-    background-color: #f8f9fa;
+    background-color: #fff;
 }
 
 .values-grid {
@@ -293,7 +301,7 @@ section {
 
 /* Testimonials Section */
 .testimonials {
-    background-color: #f8f9fa;
+    background-color: #fff;
 }
 
 .testimonial-grid {
@@ -398,7 +406,8 @@ section {
     transform: translateY(-2px);
 }
 
-/* Mobile Responsive for 320-425px */
+/* Mobile Responsive for 320-425px and 435px breakpoint */
+
 @media (max-width: 425px) {
     .hero {
         min-height: 450px;
@@ -425,71 +434,33 @@ section {
         font-size: 28px;
     }
     
-    .statistics {
-        transform: scale(0.75);
-        transform-origin: center center;
-        margin: 0;
-        padding: 40px 5px;
+    .hero-cta-btn {
+        padding: 6px 8px;
+        height: 30px;
+        min-width: auto;
     }
     
-    .stats-grid {
-        max-width: 90%;
-        margin: 0 auto;
-        gap: 10px;
-    }
-    
-    .stat-item {
-        padding: 10px 5px;
-        margin: 0;
-        overflow: hidden;
-        width: 100%;
-        box-sizing: border-box;
-    }
-    
-    .stat-number {
-        font-size: 24px;
-        word-break: break-word;
-    }
-    
-    .stat-label {
-        font-size: 12px;
-        margin-bottom: 8px;
-        word-break: keep-all;
-    }
-    
-    .stat-description {
-        font-size: 10px;
-        margin-left: 5px;
+    .cta-number {
+        width: 16px;
+        height: 16px;
+        font-size: 8px;
         margin-right: 5px;
-        word-break: keep-all;
-        line-height: 1.3;
     }
-}
     
-    .hero-subtitle {
-        font-size: 14px;
+    .cta-text {
+        font-size: 8px;
     }
     
     .hero-cta-grid {
         grid-template-columns: 1fr 1fr;
-        gap: 10px;
-        max-width: 350px;
+        gap: 6px;
+        max-width: 260px;
     }
     
-    .hero-cta-btn {
-        padding: 6px 10px;
-        height: 30px;
+    .hero-subtitle {
+        font-size: 14px;
     }
-    
-    .cta-number {
-        width: 18px;
-        height: 18px;
-        font-size: 9px;
-    }
-    
-    .cta-text {
-        font-size: 10px;
-    }
+}
     
     .section-title {
         font-size: 24px;
@@ -606,7 +577,7 @@ section {
 /* Problem Solution Styles */
 .problem-solution {
     padding: 60px 0;
-    background-color: #f8f9fa;
+    background-color: #fff;
 }
 
 .comparison-grid {
@@ -764,7 +735,7 @@ section {
 /* Success Cases */
 .success-cases {
     padding: 60px 0;
-    background-color: #f8f9fa;
+    background-color: #fff;
 }
 
 .cases-grid {
@@ -830,7 +801,7 @@ section {
 }
 
 .ebook-intro {
-    background-color: #f8f9fa;
+    background-color: #fff;
 }
 
 .intro-grid {
@@ -957,7 +928,7 @@ section {
 /* Secrets Page Styles */
 .secrets-intro {
     padding: 60px 0;
-    background-color: #f8f9fa;
+    background-color: #fff;
 }
 
 .why-secrets {
@@ -1044,7 +1015,7 @@ section {
 
 .exclusive-bonus {
     padding: 60px 0;
-    background-color: #f8f9fa;
+    background-color: #fff;
 }
 
 .bonus-grid {
@@ -1112,7 +1083,7 @@ section {
 /* Testimonials Page Styles */
 .stats-section {
     padding: 60px 0;
-    background-color: #f8f9fa;
+    background-color: #fff;
 }
 
 .stats-grid {
@@ -1148,7 +1119,7 @@ section {
 }
 
 .corporate-testimonials {
-    background-color: #f8f9fa;
+    background-color: #fff;
 }
 
 .testimonials-grid {
@@ -1224,7 +1195,7 @@ section {
 
 .video-testimonials {
     padding: 60px 0;
-    background-color: #f8f9fa;
+    background-color: #fff;
 }
 
 .video-grid {
@@ -1340,7 +1311,7 @@ section {
 }
 
 .instructor-intro {
-    background-color: #f8f9fa;
+    background-color: #fff;
     padding: 60px 0;
 }
 
@@ -1524,15 +1495,11 @@ section {
 
 .stat-item {
     text-align: center;
-    padding: 40px 20px;
+    padding: 40px 70px;
     background: #fff;
     border-radius: 15px;
     border: 2px solid #f0f0f0;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    overflow: hidden;
-    word-wrap: break-word;
-    box-sizing: border-box;
-    width: 100%;
 }
 
 .stat-number {
@@ -1541,8 +1508,6 @@ section {
     color: #937258;
     margin-bottom: 15px;
     display: block;
-    word-break: break-word;
-    white-space: normal;
 }
 
 .stat-label {
@@ -1553,11 +1518,6 @@ section {
     border-bottom: 2px solid #937258;
     padding-bottom: 8px;
     display: inline-block;
-    word-break: keep-all;
-    white-space: normal;
-    text-align: center;
-    width: 100%;
-    box-sizing: border-box;
 }
 
 .stat-description {
@@ -1566,13 +1526,8 @@ section {
     line-height: 1.5;
     font-style: normal;
     padding-left: 0;
-    margin-left: 10px;
-    margin-right: 10px;
-    word-break: keep-all;
-    white-space: normal;
-    text-align: center;
-    width: calc(100% - 20px);
-    box-sizing: border-box;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 /* Simple Testimonials Section */
@@ -1699,12 +1654,6 @@ section {
     }
 }
     
-    .statistics {
-        transform: scale(0.8);
-        transform-origin: center center;
-        margin: 0 auto;
-        padding: 0 15px;
-    }
     
     .stats-grid {
         max-width: 100%;
@@ -1738,5 +1687,17 @@ section {
     .testimonial-header {
         flex-direction: column;
         gap: 15px;
+    }
+    
+    .statistics .stat-number {
+        font-size: 26px;
+    }
+    
+    .statistics .stat-label {
+        font-size: 10px;
+    }
+    
+    .statistics .stat-description {
+        font-size: 8px;
     }
 }
