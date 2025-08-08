@@ -460,15 +460,17 @@ section {
         grid-template-columns: 1fr 1fr;
         gap: 6px;
         max-width: 260px;
+        margin-left: 50%;
+        margin-right: 0;
     }
     
     .hero-subtitle {
         font-size: 14px;
     }
     
-    /* Fixed buttons for mobile - positioned on right half */
+    /* Fixed buttons for mobile */
     .fixed-buttons {
-        left: 50%;
+        left: 15px;
         right: 15px;
         flex-direction: row;
         justify-content: space-between;
@@ -1674,6 +1676,12 @@ section {
     .image-content, .text-content {
         max-width: 100%;
         flex: none;
+    }
+    
+    /* Statistics grid for mobile - 1 column */
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
     
     .section-image {
