@@ -615,8 +615,9 @@ section {
 .page-hero {
     background: #ffffff;
     color: #333;
-    padding: 20px 0 60px 0;
+    padding: 0;
     text-align: center;
+    margin-top: 70px;
 }
 
 .page-title {
@@ -629,13 +630,15 @@ section {
 .hero-image {
     max-width: 100%;
     margin: 0 auto;
+    line-height: 0;
 }
 
 .consulting-image {
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    display: block;
+    object-fit: cover;
+    object-position: top center;
 }
 
 /* Problem Solution Styles */
