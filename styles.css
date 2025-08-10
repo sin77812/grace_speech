@@ -156,9 +156,9 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(52, 73, 94, 0.85);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(52, 73, 94, 0.3);
     border-radius: 30px;
     padding: 20px 30px;
     text-decoration: none;
@@ -170,13 +170,14 @@ main {
 }
 
 .hero-cta-btn:hover {
-    background: rgba(147, 114, 88, 0.8);
+    background: rgba(44, 62, 80, 0.95);
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(147, 114, 88, 0.5);
 }
 
 .cta-number {
-    background: #937258;
+    background: #d4af37;
     color: #fff;
     width: 20px;
     height: 20px;
